@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get Well Soon, Rishika 🌸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: radial-gradient(circle at center, #ffdde1, #ee9ca7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .emoji {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      color: #ff4e50;
+      font-size: 1.8rem;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background: #ff4e50;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ff6e7f;
+    }
+
+    .hidden {
+      display: none;
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="emoji">🌼</div>
+  <h1>Get Well Soon, Rishika!</h1>
+  <p>Heard you're not feeling well... just wanted to send a little sunshine your way ☀️</p>
+  <button onclick="revealMessage()">Tap for a surprise</button>
+  <div class="hidden" id="hiddenMsg">
+    Even flu can't dull your sparkle. Take rest, smile lots & get better soon! 🌟
+  </div>
+</div>
+
+<script>
+  function revealMessage() {
+    const msg = document.getElementById('hiddenMsg');
+    msg.classList.toggle('hidden');
+  }
+</script>
+
+</body>
+</html>
